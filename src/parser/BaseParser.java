@@ -1,7 +1,5 @@
 package parser;
 
-import parser.exceptions.SyntaxException;
-
 public class BaseParser {
     private ExpressionSource source;
     protected char ch;
