@@ -31,12 +31,6 @@ public class And extends AbstractBinaryOperations<BooleanExpression> implements 
         if (two == Booleans.True) {
             return one;
         }
-        if (one instanceof Equals && two instanceof Equals) {
-            BooleanExpression expression = new Equals(
-                    new Add(((Equals) one).getFirst(),
-                            ((Equals) two).getFirst()), new Const(0));
-            return expression.simplify();
-        }
         return new And(one, two);
     }
 }
