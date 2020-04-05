@@ -21,6 +21,9 @@ public class ChainTest {
             }
         } else {
             assertEquals(expected, parser.simplify(test).evaluate(0));
+            System.out.println();
+            System.out.println(parser.simplify(test).toString());
+            System.out.println();
         }
     }
 
